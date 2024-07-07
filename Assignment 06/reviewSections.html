@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Review</title>
+
+    <!-- style tag -->
+    <style>
+      span {
+        font-size: 25px;
+        padding: 13px;
+        align-items: center;
+      }
+
+      .style {
+        width: 90%;
+        height: 20%;
+        align-items: left;
+      }
+      fieldset {
+        width: 60%;
+      }
+      .label,
+      p,
+      .dD {
+        font-size: 20px;
+      }
+      legend {
+        font-size: 25px;
+      }
+      input,
+      #font {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+
+  <!-- body -->
+  <body style="padding-left: 30%">
+    <br />
+    <br />
+    <br />
+
+    <!-- headerSec -->
+    <div>
+      <span style="background-color: #a4dd9e">Step 1: Account</span
+      ><span style="background-color: #a4dd9e; align-items: center"
+        >Step 2: Personal Details</span
+      ><span style="background-color: #72a3de; align-items: center"
+        >Step 3: Review Section</span
+      >
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- form -->
+    <form>
+      <!-- fieldSet -->
+      <fieldset style="padding-left: 40px">
+        <br />
+        <br />
+
+        <!-- legend -->
+        <legend><strong>Your Review</strong></legend>
+
+        <!-- dropdown -->
+        <label for="dropD" class="dD"
+          ><strong>How did you hear about us?</strong></label
+        >
+        <select
+          required
+          name="opinion"
+          id="dropD"
+          style="padding: 3px; margin-left: 10px; border-radius: 8px"
+        >
+          <option value="">Select your option</option>
+          <option value="facebook" selected>Facebook</option>
+          <option value="twitter">Twitter</option>
+          <option value="instagram">Instagram</option>
+          <option value="linkedIn">LinkedIn</option>
+        </select>
+        <br />
+
+        <!-- radio option-->
+        <p><b>Would you visit again?</b></p>
+        <input
+          type="radio"
+          name="visitOpinion"
+          id="yes"
+          value="yes"
+          required
+          checked
+        />
+        <label for="yes" class="label"><strong>Yes</strong></label>
+        <input type="radio" name="visitOpinion" id="no" value="no" required />
+        <label for="no" class="label"><strong>No</strong></label>
+        <input
+          required
+          type="radio"
+          name="visitOpinion"
+          id="maybe"
+          value="maybe"
+        /><label for="maybe" class="label"><strong>Maybe</strong></label>
+        <br />
+        <br />
+
+        <!-- comments-->
+        <label for="comment" class="label"><strong>Comments:</strong></label
+        ><br />
+        <textarea
+          name="comments"
+          id="comment"
+          style="width: 450px; height: 100px"
+        ></textarea>
+        <br />
+        <br />
+
+        <!-- file uploading -->
+        <label for="doc" class="label"><strong>Documents:</strong></label>
+        <br />
+        <input type="file" name="document" id="doc" required />
+        <br />
+        <br />
+
+        <!-- checkBox -->
+        <input
+          type="checkbox"
+          name="signIn"
+          value="signIn"
+          id="signMe"
+          checked
+        />
+        <label for="signMe" id="font"
+          ><strong>Sign me up for email updates</strong></label
+        >
+        <br />
+        <br />
+
+        <!-- backward btn -->
+        <a href="./personalDetails.html">
+          <img src="./images/back.png" alt="backward image" width="150px" />
+        </a>
+
+        <!-- Submit btn -->
+        <input
+          type="image"
+          src="./images/submit.png"
+          alt="submit"
+          width="150px"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

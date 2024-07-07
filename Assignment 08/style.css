@@ -1,0 +1,322 @@
+
+
+
+
+@font-face {
+    font-family: 'mulilight';
+    src: url(./assets/fonts/Mulish-Light.ttf) format('truetype');
+    font-weight: light;
+}
+@font-face {
+    font-family: 'mulibold' ;
+    src: url(./assets/fonts/Mulish-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'mulimedium' ;
+    src: url(./assets/fonts/Mulish-Medium.ttf) format('truetype');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'sairaExtrabold';
+    src: url(./assets/fonts/SairaExtraCondensed-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'sairaExtramedium';
+    src: url(./assets/fonts/SairaExtraCondensed-Medium.ttf) format('truetype');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'sairaExtralight';
+    src: url(./assets/fonts/SairaExtraCondensed-Light.ttf) format('truetype');
+    font-weight: light;
+}
+@font-face {
+    font-family: 'sairaExtrabolder';
+    src: url(./assets/fonts/SairaExtraCondensed-ExtraBold.ttf) format('truetype');
+    font-weight: bolder;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* main container */
+.container{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------left side bar container-------------------------------- */
+.sideBar{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(189 93 56);
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*--------------------- right content container------------------------------------ */
+.content{
+    height: 99.3%;
+    width: 79%;
+    background-color: rgb(255, 255, 255);
+    display:inline-block ;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+/* profile image*/
+.profile{
+    max-width: 10em;
+    max-height: 10em;
+    border-radius: 50%;
+    border: 0.5rem solid rgb(255, 255, 255,0.2);
+    outline-offset: 5px;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+/* nav bar */
+nav ul li {
+    font-family: 'mulimedium';
+    margin: 2em;
+    list-style: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+/* links */
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* link hover effect */
+.nav-link:hover{
+    color:  rgb(199, 178, 169);;
+}
+
+
+/* -----------------------------------SECTIONS--------------------------------------- */
+/* about section */
+#resume-section-about{
+    height: 100%;
+    width: 100%;
+    padding: 3em;
+    border-bottom: 2px solid  rgba(189, 93, 56, 0.3);;
+}
+
+/* experience section */
+#resume-section-experience{
+    /* height: 100%; */
+    width: 100%;
+    padding: 3em;
+    border-bottom: 2px solid  rgba(189, 93, 56, 0.3);;
+}
+
+/* education section */
+#resume-section-education{
+    width: 100%;
+    padding: 3em;
+    border-bottom: 2px solid  rgba(189, 93, 56, 0.3);;
+}
+
+/* skills section */
+#resume-section-skills{
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    border-bottom: 2px solid  rgba(189, 93, 56, 0.3);;
+}
+/* interests section */
+#resume-section-interest{
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    border-bottom: 2px solid  rgba(189, 93, 56, 0.3);;
+}
+/* awards section */
+#resume-section-awards{
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    border-bottom: 2px solid  rgba(189, 93, 56, 0.3);;
+}
+
+/* ------------------------------------ABOUT----------------------------------------- */
+/* About section's heading 1 */
+.resume-section-mainHeading{
+    font-family: 'sairaExtrabolder';
+    font-size: 3rem;
+    color: #343a40;
+    margin-top: 2em;
+    text-transform: uppercase;
+        
+}
+
+/* About section's heading 2 */
+.resume-section-subheading{
+    font-family: 'sairaExtralight';
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #495057;
+    margin-top: -15px;
+    
+    
+}
+
+/* About section's heading 3 */
+.resume-section-content{
+    font-family: 'mulilight';
+    color: #6c757d;
+    font-size: 1.3rem;
+    margin-top: 2em;
+    line-height: 1.5em;
+}
+
+
+/*About section's social icons */
+.social-icon{
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-top: 2em;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/* skill icon */
+#skill{
+    width: 100%;
+    font-size: 3.5rem;
+    display: inline;
+    margin: 0px 10px;
+    color: #495057;    
+}
+
+#skill:hover{
+    color: rgb(189 93 56);;
+}
+
+/* trophy icon */
+#trophy{
+    color: rgb(255 193 7);
+}
+/* About section's social icons hover */
+.social-icon:hover{
+    background-color:  rgb(189 93 56);
+}
+
+/* span text color */
+.span{
+    color:  rgb(189 93 56);
+}
+
+/* -----------------------------------Sections's---------------------------------------- */
+/*  section's heading 1 */
+.resume-section-heading1{
+    font-family: 'sairaExtrabolder';
+    font-size: 2rem;
+    color: #343a40;
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+
+/*section's heading 2  */
+.resume-section-subheading1{
+    font-family: 'sairaExtralight';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #495057;
+    margin-top: -5px; 
+    text-transform: uppercase;
+}
+
+/* section's heading 3  */
+.resume-section-subheading2{
+    font-family: 'sairaExtralight';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#6c757d;
+    margin-top: -5px; 
+    letter-spacing: 0.05em;
+}
+
+.resume-section-subheading3{
+    font-family: 'sairaExtralight';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#6c757d;
+    margin-top: 2em; 
+}
+
+/* section's content1 */
+.resume-section-content1{
+    font-family: 'mulilight';
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-top: 2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.resume-section-content2{
+    font-family: 'mulilight';
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.resume-section-content3{
+    font-family: 'mulilight';
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-left: 2em;
+}
+
+.resume-section-awards-content{
+    margin-top: 2em;
+}
+/* -----------------------------------EXPERIENCE--------------------------------------- */
+.left{
+    display: inline-block;
+    width: 50%;
+        
+}
+
+.right{
+    font-family: 'mulilight';
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    text-align: right;
+}
+
+.article{
+    margin-bottom: 50px;
+}
+
+/* -----------------------------------INTEREST--------------------------------------- */
+/* interest's content */
+

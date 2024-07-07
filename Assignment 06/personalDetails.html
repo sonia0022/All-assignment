@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Details</title>
+
+    <!-- style -->
+    <style>
+      span {
+        font-size: 25px;
+        padding: 13px;
+        align-items: center;
+      }
+      .cnic {
+        width: 25px;
+        height: 25px;
+        padding: auto;
+      }
+      .style {
+        width: 90%;
+        height: 20%;
+        align-items: left;
+      }
+      fieldset {
+        width: 60%;
+      }
+      .label {
+        font-size: 20px;
+      }
+      legend {
+        font-size: 25px;
+      }
+      input {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+
+  <!-- body -->
+  <body style="padding-left: 30%">
+    <br /><br /><br />
+
+    <!-- headerSec -->
+    <div>
+      <span style="background-color: #a4dd9e">Step 1: Account</span
+      ><span style="background-color: #72a3de; align-items: center"
+        >Step 2: Personal Details</span
+      ><span style="background-color: #cccccc; align-items: center"
+        >Step 3: Review Section</span
+      >
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- form -->
+    <form>
+      <!-- fieldSet -->
+      <fieldset style="padding-left: 40px">
+        <br />
+        <br />
+
+        <!-- legend -->
+        <legend><strong>Personal Details</strong></legend>
+
+        <!-- first name -->
+        <label for="fn" class="label"><strong>First Name:</strong></label
+        ><br />
+        <input
+          required
+          class="style"
+          type="text"
+          name="first name"
+          id="fn"
+          placeholder="First Name"
+        />
+        <br />
+        <br />
+
+        <!-- last name-->
+        <label for="lastn" class="label"><strong>Last Name:</strong></label
+        ><br />
+        <input
+          required
+          class="style"
+          type="text"
+          name="last name"
+          id="lastn"
+          placeholder="Last Name"
+        />
+        <br />
+        <br />
+
+        <!-- CNIC -->
+        <label for="cnic" class="label"><strong>CNIC:</strong></label
+        ><br />
+        <input class="cnic" type="number" id="cnic" max="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required /><span
+          >-</span
+        >
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required />
+        <input class="cnic" type="number" maxlength="1" required /><span
+          >-</span
+        >
+        <input class="cnic" type="number" maxlength="1" required />
+        <br />
+        <br />
+
+        <!-- Social link-->
+        <label for="sociallinks" class="label"
+          ><strong>Social Links:</strong></label
+        ><br />
+        <input
+          required
+          class="style"
+          type="url"
+          name="social links"
+          id="sociallinks"
+          placeholder="Enter Facebook/LinkedIn profile links"
+        />
+        <br />
+        <br />
+
+        <!-- backward image -->
+        <a href="./accountDetails.html">
+          <img src="./images/back.png" alt="backward image" width="150px" />
+        </a>
+
+        <!-- forward image -->
+        <a href="./reviewSections.html">
+          <img src="./images/next.png" alt="forward image" width="150px"
+        /></a>
+      </fieldset>
+    </form>
+  </body>
+</html>

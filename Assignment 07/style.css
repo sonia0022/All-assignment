@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(207, 200, 200);
+}
+
+.main{
+    background-color: rgb(255, 255, 255);
+    padding: 1px 20px;
+    margin:  50px;
+}
+
+#one{
+    background-color: hsl(257, 50%, 66%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#two{
+    background-color: hsl(253, 52%, 76%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#three{
+    background-color: hsl(228, 61%, 65%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#four{
+    background-color: hsl(212, 90%, 65%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#five{
+    background-color: hsl(198, 87%, 64%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#six{
+    background-color: hsl(180, 90%, 49%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#seven{
+    background-color: hsl(158, 89%, 46%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#eight{
+    background-color: hsl(121, 69%, 64%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#nine{
+    background-color: hsl(97, 76%, 68%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#ten{
+    background-color: hsl(80, 86%, 72%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#eleven{
+    background-color: hsl(68, 89%, 56%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#twelve{
+    background-color: hsl(58, 80%, 50%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#thirteen{
+    background-color: hsl(42, 83%, 63%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#fourteen{
+    background-color: hsl(16, 84%, 70%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#fifteen{
+    background-color:hsl(358, 75%, 62%);
+    margin: 0px 50px;
+    padding: 3px 20px;
+}
+
+#alkalaine{
+    margin: 0px 125px  0px 100px;
+}
+
+#acidic{
+    margin: 0px 150px  0px 100px;
+}
+
+#neutral{
+    margin: 0px 175px  0px 100px;
+}
+
+.margin{
+    margin: 0px 350px;
+}

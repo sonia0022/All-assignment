@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Details</title>
+
+    <!-- style -->
+    <style>
+      .style {
+        width: 90%;
+        height: 20%;
+        align-items: left;
+      }
+      fieldset {
+        width: 60%;
+      }
+      .label {
+        font-size: 20px;
+      }
+      legend {
+        font-size: 25px;
+      }
+      input {
+        font-size: 17px;
+      }
+      span {
+        font-size: 25px;
+        padding: 13px;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <!-- body -->
+  <body style="padding-left: 30%">
+    <br />
+    <br />
+    <br />
+
+    <!-- headerSec -->
+    <div>
+      <span style="background-color: #72a3de">Step 1: Account</span
+      ><span style="background-color: #cccccc; align-items: center"
+        >Step 2: Personal Details</span
+      ><span style="background-color: #cccccc; align-items: center"
+        >Step 3: Review Section</span
+      >
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- form -->
+    <form>
+      <!-- fieldSet -->
+      <fieldset style="padding-left: 40px">
+        <br />
+        <br />
+
+        <!-- legend -->
+        <legend><strong>Account</strong></legend>
+
+        <!-- email -->
+        <label for="email" class="label"><strong>Email Address:</strong></label
+        ><br />
+        <input
+          required
+          class="style"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter email"
+        />
+        <br />
+        <br />
+
+        <!-- password -->
+        <label for="pswd" class="label"><strong>Password:</strong></label
+        ><br />
+        <input
+          required
+          class="style"
+          type="password"
+          name="password"
+          id="pswd"
+          placeholder="Enter password"
+          maxlength="10"
+        />
+        <br />
+        <br />
+
+        <!-- Confirm password -->
+        <label for="confirmPswd" class="label"
+          ><strong>Confirm Password:</strong></label
+        ><br />
+        <input
+          required
+          class="style"
+          type="password"
+          name="confirm password"
+          id="confirmPswd"
+          placeholder="Confirm password"
+          maxlength="10"
+        />
+        <br />
+        <br />
+
+        <!-- Backward image -->
+        <a href="./index.html">
+          <img src="./images/back.png" alt="backward image" width="150px" />
+        </a>
+
+        <!-- Forward image -->
+        <a href="./reviewSections.html">
+          <img src="./images/next.png" alt="forward image" width="150px"
+        /></a>
+      </fieldset>
+    </form>
+  </body>
+</html>

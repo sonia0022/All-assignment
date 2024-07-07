@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo Board</title>
+    <style>
+      #rotate1 {
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+      }
+      #rotate2 {
+        -webkit-transform: rotate(-270deg);
+        -moz-transform: rotate(-270deg);
+        -ms-transform: rotate(-270deg);
+        -o-transform: rotate(-270deg);
+        transform: rotate(-270deg);
+      }
+      #rotate3 {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <table border="3" cellpadding="2" cellspacing="5">
+      <!-- row 1 -->
+      <tr>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+      </tr>
+
+      <!-- row 2 -->
+      <tr>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white">
+          <img src="./images/blue sar.jpeg" width="50" alt="Blue star" />
+        </th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th
+          width="50"
+          height="50"
+          bgcolor="Blue"
+          style="transform: rotateY('90deg')"
+        >
+          START
+        </th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+      </tr>
+      <!-- row 3 -->
+      <tr>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+      </tr>
+
+      <!-- row 4 -->
+      <tr>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+      </tr>
+
+      <!-- row 5 -->
+      <tr>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+      </tr>
+
+      <!-- row 6 -->
+      <tr>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+        <th width="50" height="50" bgcolor="Blue"></th>
+      </tr>
+
+      <!-- row 7 -->
+      <tr>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="red" id="rotate1">START</th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Black"></th>
+        <th width="50" height="50" bgcolor="white">1</th>
+        <th width="50" height="50" bgcolor="Black"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white">
+          <img src="./images/green star.jpeg" alt="green star" width="50" />
+        </th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+      </tr>
+
+      <!-- row 8 -->
+      <tr>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="red"></th>
+        <th width="50" height="50" bgcolor="white">4</th>
+        <th width="50" height="50" bgcolor="lightgrey">WIN</th>
+        <th width="50" height="50" bgcolor="white">2</th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+      </tr>
+
+      <!-- row 9 -->
+      <tr>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white">
+          <img src="./images/red star.jpeg" width="50" alt="red star" />
+        </th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="Black"></th>
+        <th width="50" height="50" bgcolor="white">3</th>
+        <th width="50" height="50" bgcolor="Black"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green" id="rotate2">START</th>
+        <th width="50" height="50" bgcolor="white"></th>
+      </tr>
+
+      <!-- row 10 -->
+      <tr>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+      </tr>
+
+      <!-- row 11 -->
+      <tr>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+      </tr>
+
+      <!-- row1 12 -->
+      <tr>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+      </tr>
+
+      <!-- row 13 -->
+      <tr>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+      </tr>
+
+      <!-- row 14 -->
+      <tr>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow" id="rotate3">START</th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white">
+          <img src="./images/yellow star.jpeg" width="50" alt="yellow star" />
+        </th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+      </tr>
+
+      <!-- row 15 -->
+      <tr>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="yellow"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="white"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+        <th width="50" height="50" bgcolor="green"></th>
+      </tr>
+    </table>
+  </body>
+</html>
