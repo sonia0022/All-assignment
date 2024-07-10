@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #c7d6d9;
+}
+
+p{
+    font-size: .9rem;
+    margin: 0 0 1rem;
+}
+
+.form{
+    margin: 0 auto;
+    background-color: aliceblue;
+    width: 60%;
+    height: 80vh;
+    margin-top: 40px;
+    box-shadow: inset 5px 5px 12px white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.left{
+    display: inline-block;
+    background-color: #364cf5;
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0;
+    vertical-align: top;
+    text-align: left;
+    padding: 20px;
+}
+
+.right{
+    display: inline-block;
+    width: 62%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0;
+    text-align: left;
+    padding: 20px;
+}
+
+/* left */
+.left .one {
+    height: 10%;
+    width: 95%;
+}
+
+.left .one p{
+    font-size: x-small;
+    color: white;
+    letter-spacing: 0.12rem;
+}
+
+.left .two {
+    height: 40%;
+    width: 95%;
+}
+
+.left .two h2{
+    color: white;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.left .two p {
+    color: rgb(147, 160, 202);
+}
+
+.left .three {
+    height: 40%;
+    width: 95%;
+    background-color: rgb(36, 29, 242);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.left .three p{
+    color: white;
+}
+
+.left .three .threeLeft{
+    display: inline-block;
+}
+
+.left .three .threeRight{
+    display: inline-block;
+}
+
+.left .three .threeLeft img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Right */
+.right .header a{
+    text-decoration: none;
+    color: rgb(54, 76, 245);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.right .header p{
+    margin-top: 5px;
+}
+
+.right .inputs p{
+    color: rgb(153, 152, 152);
+    font-size: 0.8rem;
+    margin: 0 0 10px;
+}
+
+.radio1 ,.radio2{
+    border: 2px solid rgb(186, 185, 196);
+    color: black;
+    display: inline-block;
+    width: 49%;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.radio1{
+    margin-right: 3px;
+}
+
+.radiolabel{
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.full{
+    border: 2px solid rgb(186, 185, 196);
+    color: black;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
